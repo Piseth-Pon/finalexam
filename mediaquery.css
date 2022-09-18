@@ -1,0 +1,43 @@
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: lightslategray;
+    }
+
+    .book {
+        height: 300px;
+    }
+
+    .book img {
+        width: 40%;
+        height: 100%;
+        float: left;
+        object-fit: cover;
+    }
+
+    .book-desc {
+        width: 60%;
+        height: 100%;
+        float: right;
+    }
+
+    .feedback {
+        height: 600px;
+        padding: 25px;
+    }
+
+    
+
+    .feedback-info {
+        width: 50%;
+        height: 100%;
+        float: left;
+        padding: 0 25px;
+    }
+    .feedback-form {
+        width: 50%;
+        height: 100%;
+        float: right;
+        padding: 25px;
+    }
+
+}

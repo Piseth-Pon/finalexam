@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkcyan;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 32px;
+    padding: 25px 0px;
+    font-weight: bold;
+    text-shadow: 0 4px 8px dimgray;
+
+    animation: letter 4s linear infinite;
+    /* transition: all 500ms; */
+}
+/* 
+header:hover {
+    letter-spacing: 10px;
+    
+} */
+
+@keyframes letter {
+    from {
+        letter-spacing: 1px;
+    }
+    to {
+        letter-spacing: 8px;
+    }
+}
+
+
+.banner {
+    height: 600px;
+    background-image: url('./images/banner_2.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 24px;
+    border: 3px solid whitesmoke;
+    color: white;
+    letter-spacing: 4px;
+    border-radius: 10px;
+    background-color: rgba(0, 139, 139, 0.5);
+}
+
+.section-title {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 5px solid white;
+    width: fit-content;
+    margin: 10px auto;
+}
+
+
+
+
+.card {
+    width: 300px;
+    height: 350px;
+    border: 2px solid whitesmoke;
+    margin: 5px;
+    padding: 20px 10px;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 10px;
+
+    transition: all 500ms;
+}
+
+.card:hover img {
+    transform: rotate(15deg);
+}
+
+.card:nth-child(even):hover img {
+    transform: rotate(-15deg);
+}
+
+.card h4 {
+    margin-bottom: 10px;
+}
+
+.week_fact {
+    text-align: center;
+}
+
+.book {
+    height: 500px;
+    border: 2px solid whitesmoke;
+    width: 90%;
+
+    margin: 10px auto;
+}
+
+.book img {
+    height: 50%;
+    width: 100%;
+
+    object-fit: contain;
+}
+
+.book-desc {
+    padding: 10px;
+}
+
+.book-desc>* {
+    margin-bottom: 10px;
+}
+
+.book-desc h4 {
+    color: brown;
+}
+
+.book-desc h5 {
+    color: darkblue;
+}
+
+.book-desc p {
+    color: whitesmoke;
+}
+
+.feedback {
+
+}
+
+.feedback-form,
+.feedback-info {
+    width: 90%;
+    margin: 10px auto;
+}
+
+input, label, textarea {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    
+}
